@@ -56,9 +56,9 @@ int main(int argc, char *argv[]) {
     	int x = DeviceIoControl(deviceHandle, 0x22E044, &pid, sizeof(DWORD), NULL, 0, &lpBytesReturned, NULL);
     	if (x != 0){
     		printf("[!] Proccess killed - %lu\n",pid);
-		}else{
-			printf("[!] Error killing proccess - %lu \n",pid);
-		}
+	}else{
+		printf("[!] Error killing proccess - %lu \n",pid);
 	}
+    }
 
 }
